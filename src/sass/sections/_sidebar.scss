@@ -1,0 +1,68 @@
+.sidebar {
+    background-color: $dark-background-color;
+    position: fixed;
+    left: 0;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+.main-nav {
+    background-color: $dark-background-color;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    color: $text-bright-color;
+    font-family: $brand-font;
+    font-size: $logo-font-size;
+    margin-left: -3px;
+}
+
+#menu {
+    display: block;
+    background-color: inherit;
+}
+
+.sidebar-menu {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1.5px solid $sidebar-menu-color;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    .menu-item {
+        width: 100%;
+        padding: 12px 24px;
+        display: flex;
+        border-left: 4px solid transparent;
+        margin-left: -15px;
+    }
+
+    li:hover {
+        border-left: 4px solid $mark-color;   
+        background-color: $sidebar-menu-color;
+        cursor: pointer;
+        color: $text-bright-color;
+        transition: $transition;
+    }
+}
+
+
+
+.sidebar-chat {
+    padding-top: 25px;
+    color: $sidebar-menu-color;
+
+    .chat-img {
+        padding-top: 20px;
+    }
+    
+    img {
+        border-radius: 50%;
+    }
+}
+
+

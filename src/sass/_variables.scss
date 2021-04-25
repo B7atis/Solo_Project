@@ -1,11 +1,28 @@
-/* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
-$page-bg-color: #ebeae3;
+/* Text colors */
+$text-bright-color: #ffffff;
+
+
+/* Background color */
+$dark-background-color: #151515;
+
+/* Other color */
+$sidebar-menu-color: #7a7a7a;
+$span-color: #5da3f3;
+$page-background-color: #ebeae3;
+$frame-color: #e5e5e5;
+$mark-color: #ef8337;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
+$logo-font-size: 30px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: 'Rancho', cursive;
+$paragraph-font: 'Roboto', sans-serif;
+$title-font: 'Roboto', sans-serif;
+
+/* Transition */
+$transition: all 0.5s ease;
+
+/* Border */
+$section-border: 1.5px solid $frame-color;
