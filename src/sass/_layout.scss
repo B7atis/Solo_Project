@@ -7,44 +7,44 @@
 }
 
 body {
-   background-color: $dark-background-color;
+  background-color: $dark-background-color;
 }
 
 h3 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-family: $title-font;
-    margin-left: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $title-font;
+  margin-left: 12px;
 }
 
 a {
-    text-decoration: none;
-    color: $sidebar-menu-color;
-    cursor: pointer;
-    margin-left: 15px;   
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  margin-left: 15px;   
 }
 
 a:hover {
-    color: $text-bright-color;
+  color: $text-bright-color;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: $sidebar-menu-color;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: $sidebar-menu-color;
 }
 
 button {
-    border: none;
-    color: $sidebar-menu-color;
-    background-color: inherit;
-    font-size: 20px;
-    padding-top: 10px;
-    margin-left: 12%;
-    position: fixed;
+  border: none;
+  color: $sidebar-menu-color;
+  background-color: inherit;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 11%;
+  position: fixed;
 }
 
 small {
-    color: $span-color;
+  color: $span-color;
 }
