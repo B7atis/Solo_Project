@@ -1,16 +1,16 @@
 .topbar {
   height: 60px;
-  width: 82%;
+  width: 100%;
   position: fixed;
   text-align: right;
-  background-color: $light-background-color;
-  color: $text-dark-color;
+  background-color: $light-bg-color;
+  color: $text-dk-color;
   border-bottom: $section-border;
-  margin-left: 18%;
 
   .topbar-menu {
     display: inline-flex;
-    color: $text-medium-color;
+    text-align: center;
+    color: $text-md-color;
     height: 100%;
 
     .topbar-item {
@@ -18,16 +18,15 @@
       padding: 18px 0;
       cursor: pointer;
       position: relative;
-
+  
       * {
         padding: 0 8px;
-        vertical-align: top;
       }
-
+  
       .icon-arrow-down {
         font-size: 10px;
       }
-
+  
       .icon-notification::after {
         position: absolute;
         content: '';
@@ -36,7 +35,7 @@
         border-radius: 50%;
         background-color: $notification-color;
         right: 15px;
-        top: 20px;
+        top: 15px;
       }
     }
   }

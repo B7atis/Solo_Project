@@ -1,83 +1,96 @@
 .sidebar {
-  background-color: $dark-background-color;
   position: fixed;
-  left: 0;
-  padding: 0 20px 0 20px;
-  width: 100%;
+  background-color: $dark-bg-color;
+  z-index: 99;
+  height: 60px;
 }
-
+  
 .main-nav {
-  background-color: $dark-background-color;
   padding: 16px;
   display: flex;
   justify-content: space-between;
   height: 60px;
-}
 
-.logo {
-  color: $text-bright-color;
-  font-family: $brand-font;
-  font-size: $logo-font-size;
-  margin-left: -3px;
-}
-
-#menu {
-  display: block;
-  background-color: inherit;
+  .logo {
+    font-family: $brand-font;
+    font-size: $logo-font-size;
+    color: $text-lgh-color;
+  }
 }
 
 .sidebar-menu {
   padding: 0;
   margin: 0;
-  border-bottom: 1.5px solid $sidebar-menu-color;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  border-bottom: 1.5px solid $active-menu-color;
+  padding-bottom: 18px;
 
   .menu-item {
     width: 100%;
     padding: 12px 24px;
     display: flex;
-    border-left: 4px solid transparent;
-    margin-left: -15px;
-  }
-
-  li:hover {
-    border-left: 4px solid $mark-color;
-    background-color: $sidebar-menu-color;
-    cursor: pointer;
-    color: $text-bright-color;
-    transition: $transition;
+    align-items: center;
+    i::before {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+    a {
+      word-wrap: break-word;
+    }
+    
+    &:hover {
+      border-left: 4px solid $notification-color;
+      background-color: $active-menu-color;
+      cursor: pointer;
+      color: $text-lgh-color;
+      transition: $transition;
+    }
   }
 }
-
+  
 .sidebar-chat {
-  padding-top: 25px;
-  color: $sidebar-menu-color;
-
-  .chat-list {
+  margin-top: 18px;
+  padding: 18px;
+  position: relative;
+  
+  .sidebar-chat-title {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .sidebar-chat-list {
     display: flex;
     padding: 12px 0;
     cursor: pointer;
-
-    .chat-img {
-      padding-top: 20px;
-    }
-    
-    img {
-      border-radius: 50%;
-      height: 55px;
-      width: 55px;
-    }
-
-    &::before {
+  
+    .sidebar-chat-img {
       position: relative;
-      content: '';
-      height: 12px;
-      width: 12px;
-      border-radius: 50%;
-      background-color: $active-color;
-      left: 50px;
-      top: 18px;
+    
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    
+      &::before {
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: $active-color;
+        right: 0;
+        top: 2px;
+      }
+    }
+      
+    a {
+      position: absolute;
+      top: 50%;
+      left: 40%;
     }
   }
 }
+
+#vertical-list {
+  display: none;
+} 
