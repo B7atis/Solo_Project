@@ -29,10 +29,12 @@
     padding: 12px 24px;
     display: flex;
     align-items: center;
+
     i::before {
       margin-right: 12px;
       font-size: 20px;
     }
+    
     a {
       word-wrap: break-word;
     }
