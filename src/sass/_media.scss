@@ -3,43 +3,86 @@
 @media (max-width: 767px) {
   // @include grid('sm');
 
-  .sidebar {
-    width: 100%;
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
 
-    .sidebar-menu {
-      display: none;
+  #menu {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    &.show-menu {
+      height: inherit;
+      display: block;
     }
-    
-    .sidebar-chat {
-      display: none;
-    }
+  }
+
+  .topbar {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .main-content {
+    margin-top: 15px;
+  }
+
+  .date-picker {
+    transform: scale(0.8);
   }
 }
 
 @media (min-width: 768px) {
   // @include grid('md');
 
+  .page-wrapper {
+    display: flex;
+    flex-wrap: row wrap;
+  }
+
   .sidebar {
     width: 20%;
     height: 100vh;
+    position: relative;
+    position: fixed;
 
-    .sidebar-menu {
-      display: block;
+    .main-nav {
+      position: static;
     }
   
-    .sidebar-chat {
-      display: block;
+    #menu {
+      padding-top: 0;
+    }
+
+    .vertical-list {
+      display: none;
     }
   }
 
   .main-content {
     margin-left: 20%;
   }
+
+  .date-picker {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 992px) {
   // @include grid('lg');
 
+  .list-item {
+    display: inline-flex;
+
+    .list-item-title {
+      flex: 0 0 40%;
+    }
+
+    .list-item-link {
+      font-size: $paragraph-font-size;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
