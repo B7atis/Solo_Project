@@ -6,13 +6,13 @@
   background-color: $light-bg-color;
   color: $text-dk-color;
   border-bottom: $section-border;
-
+  z-index: 9;
+  
   .topbar-menu {
     display: inline-flex;
-    text-align: center;
     color: $text-md-color;
     height: 100%;
-
+  
     .topbar-item {
       border-left: 1.5px solid $frame-color;
       padding: 18px 0;
@@ -21,6 +21,7 @@
   
       * {
         padding: 0 8px;
+        vertical-align: middle;
       }
   
       .icon-arrow-down {

@@ -45,5 +45,6 @@
         "stylelint-scss": "^3.5.4"
     },
     "dependencies": {
+        "json-server": "^0.16.3"
     }
 }

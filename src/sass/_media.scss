@@ -1,7 +1,7 @@
 /* Media */
 
 @media (max-width: 767px) {
-  // @include grid('sm');
+  @include grid('sm');
 
   [class*="col-"] {
     flex: 0 0 100%;
@@ -13,12 +13,13 @@
     display: flex;
     height: 0;
     overflow: hidden;
+  
     &.show-menu {
       height: inherit;
       display: block;
     }
   }
-
+  
   .topbar {
     height: 0;
     overflow: hidden;
@@ -31,26 +32,59 @@
   .date-picker {
     transform: scale(0.8);
   }
-}
 
+  .chat-link {
+    transform: scale(0.8);
+  }
+
+  #modal-chat {
+    .chat-title {
+      font-size: 12px;
+    }
+  
+    .chat-form {
+      flex-wrap: wrap;
+  
+      form {
+        margin-right: 0;
+        width: 100%;
+        display: inline-flex;
+  
+        .chat-input {
+          transform: scale(0.8);
+        }
+      }
+  
+      .btn {
+        margin: 0 auto;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+    
 @media (min-width: 768px) {
-  // @include grid('md');
+  @include grid('md');
 
   .page-wrapper {
     display: flex;
     flex-wrap: row wrap;
   }
-
+    
   .sidebar {
-    width: 20%;
-    height: 100vh;
     position: relative;
     position: fixed;
+    width: 20%;
+    height: 100vh;
 
     .main-nav {
       position: static;
+
+      .menu-toggler {
+        display: none;
+      }
     }
-  
+
     #menu {
       padding-top: 0;
     }
@@ -67,25 +101,51 @@
   .date-picker {
     transform: scale(1);
   }
-}
 
+  #modal-chat {
+    .chat-img {
+      img {
+        height: 60px;
+        width: 60px;
+      }
+  
+      &::before {
+        transform: scale(1.3);
+        top: 8px;
+      }
+    }
+  }
+
+  .list-item .list-item-icons {
+    transform: scale(1);
+  }
+}
+  
 @media (min-width: 992px) {
-  // @include grid('lg');
+  @include grid('lg');
 
   .list-item {
-    display: inline-flex;
+    padding: 18px;
 
     .list-item-title {
-      flex: 0 0 40%;
+      flex: 0 0 30%;
     }
-
+  
     .list-item-link {
       font-size: $paragraph-font-size;
+      order: 2;
+      flex: 1;
+    }
+
+    .list-item-icons {
+      order: 3;
     }
   }
 }
-
+    
 @media (min-width: 1200px) {
+  @include grid('xl');
+
   .sidebar {
     width: 15%;
   }
