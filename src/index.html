@@ -17,6 +17,7 @@
         <div class="page-wrapper">
 
             <!--Sidebar-->
+
             <aside class="sidebar">
                 <div class="main-nav">
                     <a class="logo" href="#">Just do it</a>
@@ -48,6 +49,7 @@
             </aside>
     
             <!--Topbar-->
+
             <nav class="topbar">
                 <ul class="topbar-menu" id="horizontal-list">
                     <li class="topbar-item wallet"><a href="#"><i class="icon-wallet icon"></i><span>$1,500.00</span><i class="icon-arrow-down icon"></i></a></li>
@@ -58,56 +60,60 @@
             </nav>
     
             <!--Dashboard-->
+
             <main class="main-content">
     
-             <!--General Statistics-->
-            <section class="subpage-wrapper" id="general">
-                <h2 class="subpage-title">general statistic</h2>
+                <!--General Statistics-->
 
-                <div class="date-picker-wrapper wrapper">
-                    <div class="date-picker">
-                        <form class="date-form">
-                            <input class="date-start" type="text" name="date" placeholder="16-05-2016">
-                            <input class="date-end" type="text" name="date" placeholder="16-05-2016">
-                            <i class="icon-calendar icon"></i>
-                        </form>
-                        <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                <section class="subpage-wrapper" id="general">
+                    <h2 class="subpage-title">general statistic</h2>
+    
+                    <div class="date-picker-wrapper wrapper">
+                        <div class="date-picker">
+                            <form class="date-form">
+                                <input class="date-start" type="text" name="date" placeholder="16-05-2016">
+                                <input class="date-end" type="text" name="date" placeholder="16-05-2016">
+                                <i class="icon-calendar icon"></i>
+                            </form>
+                            <button class="btn btn-refresh"><i class="icon-refresh icon"></i></button>
+                        </div>
                     </div>
-                </div>
     
                     <div class="chart-statistics-wrapper wrapper">
                         <div class="row chart-statistics">
-                            <div class="col-md-6">
-                                <div class="row chart-statistics-detail left">
+                            <div class="col-md-5">
+                                <div class="row chart-statistics-detail">
                                     <h4 class="chart-statistics-text">Visit Signups</h4>
                                     <p class="chart-statistics-value">124</p>
                                 </div>
-                                <div class="row chart-statistics-detail left">
+                                <div class="row chart-statistics-detail">
                                     <h4 class="chart-statistics-text">FTD</h4>
                                     <p class="chart-statistics-value">445</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row chart-statistics-detail right">
+                            <div class="col-md-5">
+                                <div class="row chart-statistics-detail">
                                     <h4 class="chart-statistics-text">Net deposit</h4>
                                     <p class="chart-statistics-value">564</p>
                                 </div>
-                                <div class="row chart-statistics-detail right">
+                                <div class="row chart-statistics-detail">
                                     <h4 class="chart-statistics-text">Turn over</h4>
                                     <p class="chart-statistics-value">432</p>
                                 </div>
                             </div>
                         </div>
+    
                         <div class="chart-statistics">
                             <h4>Earnings chart</h4>
                             <div class="chart">
-                                <img src="images/chart.png" alt="chart">
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
                     </div>
                 </section>
     
                 <!--Links-->
+
                 <section class="subpage-wrapper" id="links">
                     <h2 class="subpage-title">links</h2>
     
@@ -115,92 +121,92 @@
                         <button class="btn" type="button">+ add new</button>
                     </div>
     
-                    <div class="link-list-wrapper wrapper">
+                    <div class="list-wrapper wrapper">
                         <div class="list-item">
-                            <h4 class="list-item-title col-md-5">Home page</h4>
-                            <a class="list-item-link col-md-6" href="#">http://www.homepage.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Home page</h4>
+                            <a class="list-item-link" href="http://www.homepage.com" target="_blank">http://www.homepage.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="list-item-title col-md-5">Currently offer</h4>
-                            <a class="list-item-link col-md-6" href="#">http://www.currently.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Currently offer</h4>
+                            <a class="list-item-link" href="http://www.currently.com" target="_blank">http://www.currently.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Blurpix</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.blurpix.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Blurpix</h4>
+                            <a class="list-item-link" href="http://www.blurpix.com" target="_blank">http://www.blurpix.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Your site</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.yoursite.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Your site</h4>
+                            <a class="list-item-link" href="http://www.yoursite.com" target="_blank">http://www.yoursite.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Google</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.google.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Google</h4>
+                            <a class="list-item-link" href="http://www.google.com" target="_blank">http://www.google.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Facebook</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.facebook.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Facebook</h4>
+                            <a class="list-item-link" href="http://www.facebook.com" target="_blank">http://www.facebook.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Dashboard</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.dashboard.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Dashboard</h4>
+                            <a class="list-item-link" href="http://www.dashboard.com" target="_blank">http://www.dashboard.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Blurax</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.blurax.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Blurax</h4>
+                            <a class="list-item-link" href="http://www.blurax.com" target="_blank">http://www.blurax.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Piece of Wine</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.pieceofwine.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Piece of Wine</h4>
+                            <a class="list-item-link" href="http://www.pieceofwine.com" target="_blank">http://www.pieceofwine.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
     
                         <div class="list-item">
-                            <h4 class="link-list-title col-md-5">Twitter</h4>
-                            <a class="link-list-link col-md-6" href="#">http://www.twitter.com</a>
-                            <div class="list-item-icons col-md-1">
+                            <h4 class="list-item-title">Twitter</h4>
+                            <a class="list-item-link" href="http://www.twitter.com" target="_blank">http://www.twitter.com</a>
+                            <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
@@ -211,129 +217,136 @@
                         <button class="btn" type="button">+ add new</button>
                     </div>
                 </section>
-
+    
                 <!--Details-->
+
                 <section class="subpage-wrapper" id="details">
                     <h2 class="subpage-title">details</h2>
-                 </section>
-
+                </section>
+    
                 <!--Banners-->
+
                 <section class="subpage-wrapper" id="banners">
                     <h2 class="subpage-title">banners</h2>
-
+    
                     <div class="btn-wrapper wrapper">
                         <button class="btn" type="button">+ add new</button>
                     </div>
-
+    
                     <div class="list-wrapper wrapper">
                         <div class="list-item">
                             <h4 class="list-item-title">Banner main</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/main.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/main.gif" target="_blank">http://www.website.com/main.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
-
+    
                         <div class="list-item">
                             <h4 class="list-item-title">Sign up banner</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/signup.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/signup.gif" target="_blank">http://www.website.com/signup.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
-
+    
                         <div class="list-item">
                             <h4 class="list-item-title">Banner left side</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/leftside.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/leftside.gif" target="_blank">http://www.website.com/leftside.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
-
+    
                         <div class="list-item">
                             <h4 class="list-item-title">Vertical banner</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/vert.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/vert.gif" target="_blank">http://www.website.com/vert.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
-
+    
                         <div class="list-item">
                             <h4 class="list-item-title">Front banner</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/front.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/front.gif" target="_blank">http://www.website.com/front.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
-
+    
                         <div class="list-item">
                             <h4 class="list-item-title">Horizontal banner</h4>
-                            <a class="list-item-link" href="#">http://www.website.com/horizontal.gif</a>
+                            <a class="list-item-link" href="http://www.website.com/horizontal.gif" target="_blank">http://www.website.com/horizontal.gif</a>
                             <div class="list-item-icons">
                                 <i class="icon-links"></i>
                                 <i class="icon-trash"></i>
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="btn-wrapper wrapper">
                         <button class="btn" type="button">+ add new</button>
                     </div>
                 </section>
-
+    
                 <!--Personal Data-->
+
                 <section class="subpage-wrapper" id="personal-data">
                     <h2 class="subpage-title">personal data</h2>
                 </section>
-
+    
                 <!--Payout-->
+
                 <section class="subpage-wrapper" id="payout">
                     <h2 class="subpage-title">payout</h2>
                 </section>
-
+    
                 <!--Postback-->
+
                 <section class="subpage-wrapper" id="postback">
                     <h2 class="subpage-title">postback</h2>
                 </section>
-            </main>
-        </div>
+    
+                <!--Modal-1-->
 
-        <!--Modal-1-->
-        <div class="modals">
-            <div class="overlay" id="overlay">
-                <div class="modal" id="modal-logout">
-                    <div class="btn-close js--close-modal">x</div>
-                    <h4 class="modal-logout-title">Do you really want to Quit?</h4>
-                    <div class="modal-logout-buttons">
-                        <button class="btn btn-grey js--close-modal">Cancel</button>
-                        <button class="btn btn-orange js--close-modal">Quit</button>
+                <div class="modals">
+                    <div class="overlay" id="overlay">
+    
+                        <div class="modal" id="modal-logout">
+                            <div class="btn-close js--close-modal">x</div>
+                            <h4 class="modal-logout-title">Do you really want to Quit?</h4>
+                            <div class="modal-logout-buttons">
+                                <button class="btn btn-grey js--close-modal">Cancel</button>
+                                <button class="btn btn-orange js--close-modal">Quit</button>
+                            </div>
+                        </div>
+    
+                        <div class="modal" id="modal-chat">
+                            <div class="btn-close js--close-modal">x</div>
+                            <div class="sidebar-chat modal-chat">
+                                <h3 class="chat-title">Online chat with your personal manager</h3>
+                                <div class="chat-list">
+                                    <div class="chat-img"><img src="./images/manager.png" alt=""></div>
+                                    <a class="chat-link link" href="#"><span>Michael Ekwueme</span></a>
+                                </div>
+                                <div class="chat-field"></div>
+                                <div class="chat-form">
+                                    <form>
+                                        <i class="icon-message icon"></i>
+                                        <input class="chat-input" type="text" placeholder="Enter your message..">
+                                    </form>
+                                    <button class="btn js--close-modal">Send</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="modal" id="modal-chat">
-                    <div class="btn-close js--close-modal">x</div>
-                    <div class="sidebar-chat modal-chat">
-                        <h3 class="chat-title">Online chat with your personal manager</h3>
-                        <div class="chat-list">
-                            <div class="chat-img"><img src="./images/manager.png" alt=""></div>
-                            <a class="chat-link link" href="#"><span>Michael Ekwueme</span></a>
-                        </div>
-                        <div class="chat-field"></div>
-                        <div class="chat-form">
-                            <form>
-                                <i class="icon-message icon"></i>
-                                <input class="chat-input" type="text" placeholder="Enter your message..">
-                            </form>
-                            <button class="btn js--close-modal">Send</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+            </main>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>

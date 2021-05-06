@@ -1,6 +1,48 @@
 {
   'use strict';
   
+  /* Init Pages */
+    
+  function initPages() {
+
+    this.pages = document.querySelectorAll('.subpage-wrapper');
+    this.navLinks = document.querySelectorAll('.main-nav-item');
+  
+    const idFromHash = window.location.hash.replace('#/', '');
+    let pageMatchingHash = this.pages[0].id;
+  
+    for(let page of this.pages) {
+      if(page.id == idFromHash) {
+        pageMatchingHash = page.id;
+        break;
+      }
+    }
+    this.activatePage(pageMatchingHash);
+  
+    for(let link of this.navLinks) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.querySelector('a').getAttribute('href').replace('#', '');
+        activatePage(id);
+        window.location.hash = '#/' + id;
+      });
+    }
+  }
+  
+  function activatePage(pageId) {
+      
+    for(let page of this.pages) {
+      page.classList.toggle('active-page', page.id == pageId);
+    }
+
+    for(let link of this.navLinks) {
+      link.classList.toggle('active-page', link.getAttribute('data-id') == '#' + pageId
+      );
+    }
+  }
+      
+  initPages();
+
   /* Modals */
   
   //CLOSE MODAL
