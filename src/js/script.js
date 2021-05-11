@@ -122,4 +122,16 @@
       
   initPages();
   console.log(/* Hello World! */);
+
+  /* Toggle Mobile-Menu */
+
+  function toggleMenu(visible) {
+    document.getElementById('menu').classList.toggle('show-menu', visible);
+  }
+
+  document.querySelector('.menu-toggler').addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log(e.target);
+    toggleMenu();
+  });
 }
