@@ -1,1 +1,1 @@
-# solo-project
+https://b7atis.github.io/solo-project/
